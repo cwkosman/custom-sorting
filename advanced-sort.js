@@ -8,14 +8,13 @@ var students = [
 students.sort((a,b) => {
   if (a.name > b.name) {
     return 1;
-  }
-  if (a.name < b.name) {
+  } else if (a.name < b.name) {
     return -1;
   }
-  if (a.age > b.age) {
+
+  if (a.age < b.age) {
     return 1;
-  }
-  if (a.age > b.age) {
+  } else if (a.age > b.age) {
     return -1;
   }
 });
